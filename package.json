@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-css": "node-sass -w src/sass/ -o dist/css/",
     "watch-js": "watchify src/js/app.js -o dist/js/bundle.js -dv",
-    "watch": "npm run watch-js & npm run watch-css",
+    "watch-html": "pug -w src/pug/ -o dist/html/",
+    "watch": "npm run watch-js & npm run watch-css & npm run watch-html",
     "build-js": "browserify src/js/app.js | uglifyjs -mc > dist/js/bundle.js",
     "build": "npm run build-js"
   },
@@ -16,7 +17,9 @@
   "devDependencies": {
     "browserify": "^14.0.0",
     "eslint": "^3.14.1",
+    "express": "^4.14.1",
     "node-sass": "^4.4.0",
+    "pug": "^2.0.0-beta10",
     "uglify-js": "^2.7.5",
     "watchify": "^3.9.0"
   }
