@@ -1,4 +1,17 @@
 //- main.pug
 - var name= "Kim";
+- var people= ["Ryan", "Mitch", "Hannah"];
 
-p #{name}'s Pug source code!
+doctype html
+html
+  head
+    style
+      include ../../dist/css/main.css
+
+  body
+    p #{name} is a nice person.
+    - for (var i = 0; i < people.length; i++)
+      li
+        span=people[i] + " is a nice person."
+    script
+      include ../../dist/js/bundle.js

@@ -1,0 +1,4 @@
+{
+  "extends": "./node_modules/coding-standard/.pug-lintrc",
+  "disallowIdLiterals": null
+}
