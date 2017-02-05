@@ -1,3 +1,63 @@
+/* body */
+
 body {
-    background-color: inherit;
+    font-size: 16px;
+    background-color: #F0F0F0;
+}
+
+.wrapper {
+    margin: auto;
+    width: 1000px;
+}
+
+/* title */
+
+.title {
+    text-align: center;
+}
+
+/* main display area */
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 600px;
+    padding: 20px;
+    border-color: #CFCFCF;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: thin;
+    background-color: white;
+}
+
+/* items inside the main area */
+
+#canvas {
+    height: 800px;
+    width: 800px;
+    margin: 0;
+    // border: 0;
+    border-color: black;
+    // border-radius: 3px;
+    border-style: solid;
+    border-width: thin;
+}
+
+.overlay {
+    width: 200px;
+    border-color: black;
+    // border-radius: 3px;
+    border-style: solid;
+    border-width: thin;
+    background-color: lightgray;
+
+    .close {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: 0;
+        right:0;
+        background-color: red;
+    }
 }

@@ -9,9 +9,23 @@ html
       include ../../dist/css/main.css
 
   body
-    p #{name} is a nice person.
-    - for (var i = 0; i < people.length; i++)
-      li
-        span=people[i] + " is a nice person."
+    div(class="wrapper")
+      div(class="title")
+        h1 Automaton Above
+      div(class="main")
+        div(id="gui", class="gui")
+          canvas(id="canvas")
+          div(id="test", class="overlay", style="display: none;")
+            div(class="close")
+            h2 Menu
+            p example text
+          div(id="fps", class="overlay")
+      h2 display variables and lists
+      p #{name} is a nice person.
+      - for (var i = 0; i < people.length; i++)
+        li
+              span=people[i] + " is a nice person."
+    script(src="lib/jquery-3.1.1.js")
+    script(src="lib/jquery-ui-1.12.1.js")
     script
       include ../../dist/js/bundle.js

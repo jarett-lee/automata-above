@@ -2,10 +2,14 @@
     "env": {
         "browser": true,
         "node": true,
-        "es6": true
+        "es6": true,
+        "jquery": true
     },
     "extends": "eslint:recommended",
     "rules": {
+        "no-unused-vars": [
+            "warn"
+        ],
         "indent": [
             "error",
             4
